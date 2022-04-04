@@ -6,43 +6,46 @@
         <meta name="description" content="Trackgenix Landing Page">
         <meta name="author" content="Juan Ramos">
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+
         <title>Trackgenix</title>
     </head>
     <body>
         <header>
-            <section>
+            <section id="tutorials-contact">
                 <a href="https://www.w3schools.com/css/" target="_blank">Tutorials |</a>
                 <a href="https://www.imdb.com/title/tt0118884/" target="_blank"> Contact</a>
             </section>
-            <section>
+            <section id="search">
                 <input type="text" placeholder="Search">
-                <img src="../assets/search.png" width="20" height="20">               
+                <img src="../assets/search.png" width="15" height="15">               
             </section>
-            <section>
-                <a href="#login">Login</a>
-                <a href="#sign-up">Sign Up</a>
+            <section class="log-in">
+                <input type="button" id="log-in" value="Login">
+                <input type="button" id="sign-up" value="Sign Up">
             </section>
         </header>
-        <aside id="Side-bar-menu">
-            <section>
+        <aside class="side-bar">
+            <section id="section-1">
                 <label>Menu</label>
                 <a href="http//:google.com">History</a>
                 <a href="http//:google.com">About Us</a>
                 <a href="http//:google.com">Contact Form</a>
                 <a href="http//:google.com">Sources</a>
             </section>
-            <section>
-                <a href="http//:google.com">Contact Us</a>
+            <section id="section-2">
+                <label>Contact Us</label>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
-            <section>
+            <section id="contact">
                 <a href="gmail.com">trackgenix@ingo.com</a>
-                <img src="../assets/mail.heic" alt="e-mail" width="100" height="20">
                 <a href="googlemaps.com">1234 Somewhere Road #8254, Nashville, TN 00000-0000</a>
             </section>
-            <section>
-                <input type="submit" value="Get system information">
+            <section id="get-info">
+                <input type="button" value="Get system information">
             </section>  
         </aside>
         <main>

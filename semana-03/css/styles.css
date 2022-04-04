@@ -1,0 +1,118 @@
+*{
+    font-family: 'Roboto', sans-serif;
+   
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #50A780;
+    border: solid black;
+    height: 4%;
+}
+header>section{
+    display: inline-block;
+    width:20%;
+}
+#tutorials-contact{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid black;
+}
+#search{
+    position: relative;
+    width: 30%;
+    height: 70%;
+    margin-left: 35%;
+    margin-top: 0.42%;
+    margin-right: 30%;
+    border-radius: 20%;
+    background-color: white;
+    border: solid black;
+}
+#search>input{
+    border-radius: 25%;
+    width: 90%;
+    height: 80%;
+    border: none;
+}
+#search>img{
+    display: inline-block;
+    position: absolute;
+    padding: 1%;
+    
+}
+
+.log-in{
+    width: 24%;
+    height: 2%;
+    margin-left: 71%;
+    margin-top: 0.42%;
+    border-radius: 20%;
+    
+    /* border: solid black; */
+}
+#log-in, #sign-up{
+    position: relative;
+    
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20%;
+    padding: 2%;
+    margin: 5%;
+    /* border: solid black; */
+    font-style: normal;
+    
+}
+
+
+aside{
+    width: 20%;
+    position: relative;
+    float: left;
+    height: 1000px;
+    background-image: linear-gradient(#50A780, white);
+}
+
+.side-bar a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25;
+    color: black;
+    border-bottom: 1px solid #CECACA;
+    display: block;   
+    text-shadow: 0 4px 4px 0 black; 
+}
+
+.side-bar label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    border-bottom: 2px solid #ED2626;
+    display: block;   
+}
+#contact a{
+    font-weight: 400;
+    position: relative;
+    top: 500px;
+
+    width: 100% ;
+    height: 4%;
+    font-size: 20;
+}
+#section-1{
+    display: block;
+    position: relative;
+    top: 3%;
+    left: 2%;
+    right: 7%;
+    bottom: 70%;
+
+}
+#section-2{
+    display: block;
+    position: relative;
+    top: 30%;
+    left: 2%;
+    bottom: 70%;
+}
