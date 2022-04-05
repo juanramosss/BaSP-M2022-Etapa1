@@ -5,34 +5,57 @@
 a{
     text-decoration: none;
 }
+h1{
+    font-size: 40px;
+    font-weight: 600;
 
+}
+h2{
+    font-size: 20px;
+    font-weight: 600;
+}
 header{
+    display: inline block;
     background-color: #50A780;
-    border: solid black;
+    /* border: solid black; */
     height: 4%;
+}
+header i{
+    position: relative;
+    bottom: 25%;
+    left: 2%;
+    
 }
 header>section{
     display: inline-block;
     width:20%;
 }
+
 #tutorials-contact{
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    border: solid black;
+    /* text-align: left; */
+    /* border: solid black; */
+    color: black;
+    width: 13%;
+    height: 50%;
+    position: relative;
+    left: 15%;
+    
+    bottom: 35%;
 }
 #search{
     position: relative;
     width: 30%;
     height: 70%;
-    margin-left: 35%;
-    margin-top: 0.42%;
-    margin-right: 30%;
-    border-radius: 20%;
+    bottom: 45%;
+   
+    left: 25%;
+    
+    border-radius: 20px;
     background-color: white;
-    border: solid black;
+    
 }
 #search>input{
-    border-radius: 25%;
+    border-radius: 25px;
     width: 90%;
     height: 80%;
     border: none;
@@ -45,21 +68,33 @@ header>section{
 }
 
 .log-in{
-    width: 24%;
-    height: 2%;
-    margin-left: 71%;
-    margin-top: 0.42%;
-    border-radius: 20%;
-    
-    /* border: solid black; */
+    position: relative;
+    width: 25%;
+    height: 80%;
+    left: 30%;
+    bottom:35%;
 }
+/* .log-in{
+    width: 24%;
+    height: 10%;
+    position: absolute;
+    left: 70%;
+    top: 0.42%;
+    border-radius: 20%; 
+    text-align: center;
+    
+    display: inline-block;
+
+    
+    border: solid black;
+} */
 #log-in, #sign-up{
     position: relative;
     
     width: 30%;
     height: 100%;
     background-color: white;
-    border-radius: 20%;
+    border-radius: 20px;
     padding: 2%;
     margin: 5%;
     /* border: solid black; */
@@ -70,28 +105,37 @@ header>section{
 
 aside{
     width: 20%;
-    position: relative;
+    position: static;
     float: left;
     height: 1000px;
     background-image: linear-gradient(#50A780, white);
 }
 
+
 .side-bar a{
     font-family: 'Roboto', sans-serif;
     font-size: 25;
     color: black;
+    max-width: 100%;
+    width: 65%;
     border-bottom: 1px solid #CECACA;
     display: block;   
     text-shadow: 0 4px 4px 0 black; 
+    padding: 2%;
 }
 
 .side-bar label{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    max-width: 100%;
+    width: 65%;
     border-bottom: 2px solid #ED2626;
     display: block;   
+    padding: 2%;
+
 }
-#contact a{
+
+#contact {
     font-weight: 400;
     position: relative;
     top: 500px;
@@ -100,6 +144,17 @@ aside{
     height: 4%;
     font-size: 20;
 }
+#contact2{
+    border-bottom: none;
+    width: 100%;
+}
+#contact input{
+    background-color: #50A780;
+    border-radius: 5px;
+    margin-top: 30%;
+    margin-left: 10%;
+}
+
 #section-1{
     display: block;
     position: relative;
@@ -112,7 +167,179 @@ aside{
 #section-2{
     display: block;
     position: relative;
-    top: 30%;
+    top: 20%;
     left: 2%;
     bottom: 70%;
 }
+main{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    height: 80%;
+    margin-left: 8%;
+    
+    
+}
+#logo-title img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    
+  }
+  
+  #logo-title h1, #logo-title h4 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    
+  }
+  #logo-title{
+      position: relative;
+      left: 20%;
+      top: 15%;
+  }
+  
+  #logo-title h4{
+    font-size: 25px;
+    position: relative;
+    left: 14px;
+  }
+  #heart{    
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin-top: 0%;
+  }
+  #heart img{
+      display: inline-block;
+      width: 50%;
+      
+  }
+  #heart p{
+      text-align: left;
+      display: inline-block;
+      width: 25%;
+      padding: 5%;
+      padding-left: 0%;
+      
+      margin: 5%;
+      margin-left: 0%;
+      
+      vertical-align: top;
+  
+  }
+  
+#images-5{
+      margin-bottom: 10%; ;
+      width: 100%;
+      height: 100%;
+      
+      text-align: center;
+  }
+  #images-5 figure{
+     
+      display: inline-block;
+      width: 15%;
+      height: 100px;
+      box-shadow: 0px 5px 5px #505168;
+      margin: 2%;
+  }
+  #images-5 img{
+      height: 100%;
+      width: 100%;
+  }
+  #images-5 figcaption{
+      background-color: #efe7e7;
+      padding-bottom: 2%;
+      font-size: small;
+      font-weight: 500;
+      box-shadow:  0px 5px 5px #505168;
+  }
+  #catch-questions{
+      columns: 2;
+      margin: 5%;
+      
+  }
+  #catch-questions ul{
+      margin: 10%;
+
+  }
+  #about-us{
+      background-color: #E9E9E9;
+      display: inline-block;
+      height: 30%;
+      width: 100%;
+      border-radius: 20px;
+      
+      margin-bottom: 10%;
+      
+  }
+  #about-us-title{
+      display: inline-block;
+      margin-top: 3%;
+      margin-left: 5%;
+      margin-bottom: 3px;
+  }
+  #about-us-left{
+      display: inline-block;
+      margin-right: 0%;
+      margin-bottom: 0%;
+      margin-top: 0%;
+      width: 100%;
+      
+
+  }
+  #about-us-left img{
+      display: inline-block;
+      width: 35%;
+      height: 60%;
+      margin-left: 2%;
+      box-shadow: 0px 2px 2px #505168;
+  }
+  #about-us-left p{
+      display: inline-block;
+      width: 60%;
+      vertical-align: top;
+      
+      
+      
+  }
+  #about-us-right{
+      
+      display: inline-block;
+      margin-top: 0%;
+      margin-bottom: 2%;
+      width: 60%;
+      margin-left: 38%;
+      margin-top: -7%;
+      margin-right: 0%;
+      
+
+  }
+  #about-us-right img{
+      display: inline-block;
+      width: 37%;
+      height: 0%;
+      margin-bottom: 2%;
+      margin-right: 2%;
+      box-shadow: 0px 2px 2px #505168;
+  }
+  #about-us-right p{
+      display: inline-block;
+      width: 60%;
+      vertical-align: top;
+
+  }
+
+
+
+
+
+
+  footer{
+      vertical-align: bottom;
+      margin: 40%;
+      display: inline-block;
+      width: 100%;
+      
+  }
