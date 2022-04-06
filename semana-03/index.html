@@ -124,26 +124,34 @@
                     </div>
                 </section>                
             </section>
-            <section> 
+            <div id="get-info-border"> 
                 <h2>Get system information</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" value="Write your name">
-                    <label for="email">E-mail:</label>
-                    <input type="text" id="email" value="Write your e-mail">
-                    <label for="area">Select contact area:</label>
-                    <select id="area" name="Select area">
-                        <option value="Administration">Administration</option>
-                        <option value="Data">Data</option>
-                        <option value="Human-resources">Human Resources</option>
-                    </select>
-                </form>
-                <form>
-                    <input type="text" id="message" value="Write your message" height="300" width="600">
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
-            <section>                
+                <div id="get-info">
+                    <div id="get-info1">
+                        <div id="get-name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" value="Write your name">
+                        </div>
+                        <div id="get-mail">
+                            <label for="email">E-mail:</label>
+                            <input type="text" id="email" value="Write your e-mail">
+                        </div>
+                        <div id="get-area">
+                            <label for="area">Select contact area:</label>
+                            <select id="area" name="Select area" >
+                                <option value="Administration">Administration</option>
+                                <option value="Data">Data</option>
+                                <option value="Human-resources">Human Resources</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="get-info2">
+                        <input id="message" type="text" id="message" value="Write your message">
+                        <input id="get-info-button" type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+            <section id="table">                
                 <div>
                     <label>Products</label>
                     <ul>
@@ -170,7 +178,8 @@
                         <li>API</li>
                         <li>Contact</li>
                     </ul>
-                </div>              
+                </div> 
+            </section>             
         </main>
         <footer>
             <section>
