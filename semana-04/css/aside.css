@@ -1,0 +1,54 @@
+aside{
+    display: none;
+}
+.big-container{
+    display: flex;
+    height: 1000px;
+}
+@media screen and (min-width:1024px){
+    aside{
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(#50a780, white);
+        /* justify-items: space-around; */
+        align-content: center;
+        padding: 2% 4% 2% 2%;
+        width: 20%;
+        
+        
+        
+        
+
+    }
+    .aside-block{
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        
+        
+        
+
+    }
+    .aside-block label{
+        font-size: larger;
+        font-weight: bold;
+        padding: 2% 0;
+        border-bottom: 1.5px solid #ed2626;
+
+    }
+    aside a{
+        padding: 2% 0;
+        border-bottom: 1px solid #cecaca;
+    }
+    #contact2{
+        border-bottom: none;
+    }
+    aside p{
+        padding: 5% 0 0 0;
+        text-align: left;
+    }
+    aside input{
+        background-color: #49A37B;
+        
+    }
+}
