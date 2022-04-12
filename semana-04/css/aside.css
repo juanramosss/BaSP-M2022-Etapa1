@@ -3,7 +3,7 @@ aside{
 }
 .big-container{
     display: flex;
-    height: 1000px;
+    height: 2000px;
 }
 @media screen and (min-width:1024px){
     aside{
@@ -14,20 +14,12 @@ aside{
         align-content: center;
         padding: 2% 4% 2% 2%;
         width: 20%;
-        
-        
-        
-        
 
     }
     .aside-block{
         display: flex;
         flex-direction: column;
         flex: auto;
-        
-        
-        
-
     }
     .aside-block label{
         font-size: larger;
