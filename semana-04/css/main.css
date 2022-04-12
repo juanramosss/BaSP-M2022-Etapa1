@@ -23,11 +23,7 @@ main{
     width: 100%;
     /* background: #eee;   */
 }
-@media screen and (min-width:1024px){
-    main{
-        width: 80%;
-    }
-}
+
 .body-container{
     display: flex;
     flex-direction: column;
@@ -36,12 +32,14 @@ main{
     padding: 3%;
     
     
+    
 
 }
 .main-body{
     padding: 3%;
     overflow: hidden;
     /* border: solid black; */
+
 }
 
 .body-container :nth-child(1){
@@ -60,13 +58,13 @@ main{
 }
 
 
-.body-container :nth-child(2){    
+#heart{    
     display: flex;
     flex-direction: column;
     text-align: center;   
     align-items: center;
-    
 }
+
 #big-image{
     width: auto;
     height: 243px;
@@ -98,19 +96,18 @@ main{
     background-color: #efe7e7;
     box-shadow: 0px 5px 5px #505168;
 }
-.catchy{
 
-}
 .catchy div{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     
 
 }
 .catchy div ul{
     padding: 5% 0;
 }
+
 
 .body-container :nth-child(4){
     border-radius: 20px;
@@ -183,6 +180,64 @@ main{
 
 
 
+/* 
+MEDIA QUERIES
+MEDIA QUERIES */
+
+@media screen and (min-width:768px){
+    main{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .body-container :nth-child(1){
+        justify-content: flex-start;
+    }
+    #heart{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    #big-image{
+        max-width: 70%;
+        width: auto;
+        height: 328px;
+        padding-right: 2%;
+    }
+
+    .container-figures-catchy{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: left;
+        
+    }
+    .figures, .catchy{
+        padding: 5% 0;
+
+    }
+    .catchy div h2{
+        text-align: left;
+    }
+    .catchy div li{
+        
+        font-size: 15px;
+        
+    }
+    .catchy div ul{
+        text-align: left;
+    }
+
+
+}  
 
 
 
+@media screen and (min-width:1024px){
+    main{
+        width: 80%;
+    }
+}
+
+/*
+MEDIA QUERIES
+MEDIA QUERIES */
