@@ -42,7 +42,7 @@ main{
 
 }
 
-.body-container :nth-child(1){
+#logo-title-container{
     display: flex;    
     justify-content: center;
 }
@@ -74,6 +74,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     padding: 10% 0;
+    justify-content: center;
 }
 .fig{
     width: 100px;
@@ -100,6 +101,8 @@ main{
 .catchy div{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    
     
     
 
@@ -109,12 +112,13 @@ main{
 }
 
 
-.body-container :nth-child(4){
+#about-us{
     border-radius: 20px;
     background-color: #E9E9E9;
     
     
 }
+
 
 .body-container :nth-child(4) :nth-child(1){
     display: flex;
@@ -189,8 +193,9 @@ MEDIA QUERIES */
         width: 80%;
         margin: 0 10%;
     }
-    .body-container :nth-child(1){
+    #logo-title-container{
         justify-content: flex-start;
+        
     }
     #heart{
         display: flex;
@@ -235,6 +240,36 @@ MEDIA QUERIES */
 @media screen and (min-width:1024px){
     main{
         width: 80%;
+    }
+    .container-figures-catchy{
+        display: flex;
+        flex-direction: column;
+    }
+    .figures{
+        display: flex;
+        flex-wrap: nowrap;
+       
+        justify-content: center;
+    }
+    .fig{
+        margin: 3%;
+        flex: none;
+        
+    }
+    .fig img{
+        width: 100%;
+        height: 80%;
+        
+    }
+    .catchy{
+        display: flex;
+        
+    }
+    .catchy div{
+        margin: 0 2%
+    };
+    .catchy h2{
+        font-size: 27px;
     }
 }
 
