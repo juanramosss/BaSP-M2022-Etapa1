@@ -3,7 +3,7 @@ aside{
 }
 .big-container{
     display: flex;
-    height: 2000px;
+    
 }
 @media screen and (min-width:1024px){
     aside{

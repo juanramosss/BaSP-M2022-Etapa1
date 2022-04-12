@@ -136,87 +136,91 @@
                             </div>
                         </div>                
                     
-                        <div class="get-info"> 
+                        <div class="get-info-container"> 
                             <h2>Get system information</h2>
-                            <div class="get-info">
-                            
-                                <div id="get-name">
-                                    <label for="name">Name:</label>
-                                    <input type="text" id="name" value="Write your name">
+                            <div class="get-info-container2">
+                                <div class="get-info">
+                                
+                                    <div id="get-name">
+                                        <label for="name">Name:</label>
+                                        <input type="text" id="name" value="Write your name">
+                                    </div>
+                                    <div id="get-mail">
+                                        <label for="email">E-mail:</label>
+                                        <input type="text" id="email" value="Write your e-mail">
+                                    </div>
+                                    <div id="get-area">
+                                        <label for="area">Select contact area:</label>
+                                        <select id="area" name="Select area" >
+                                            <option value="Administration">Administration</option>
+                                            <option value="Data">Data</option>
+                                            <option value="Human-resources">Human Resources</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div id="get-mail">
-                                    <label for="email">E-mail:</label>
-                                    <input type="text" id="email" value="Write your e-mail">
+                                <div class="get-info2" >
+                                    <input id="message" type="text" id="message" value="Write your message">
+                                    <input id="get-info-button" type="submit" value="Send">
                                 </div>
-                                <div id="get-area">
-                                    <label for="area">Select contact area:</label>
-                                    <select id="area" name="Select area" >
-                                        <option value="Administration">Administration</option>
-                                        <option value="Data">Data</option>
-                                        <option value="Human-resources">Human Resources</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="get-info" >
-                                <input id="message" type="text" id="message" value="Write your message">
-                                <input id="get-info-button" type="submit" value="Send">
                             </div>
                         </div>
                 </section>     
-                <section  class="side-to-side" >                
-                    <div>
-                        <label>Products</label>
-                        <ul>
-                            <li>Functionalities</li>
-                            <li>Download</li>
-                            <li>Integration</li>
-                            <li>Extras</li>                    
-                        </ul>
-                    </div>
-                    <div id="company">
-                        <label>Company</label>
-                        <ul>
-                            <li>Information</li>
-                            <li>Clients</li> 
-                            <li>Resources</li>
-                            <li>Blog</li>
-                        </ul>
-                    </div>                
-                    <div>
-                        <label>Support</label>
-                        <ul>
-                            <li>Help</li>  
-                            <li>Tutorials</li>
-                            <li>API</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div> 
-                </section>
+                
                           
             </main>
+            
         </div> 
-        <!-- <footer>
-            <section>
+        <section  class="side-to-side" >                
+            <div>
+                <label>Products</label>
+                <ul>
+                    <li>Functionalities</li>
+                    <li>Download</li>
+                    <li>Integration</li>
+                    <li>Extras</li>                    
+                </ul>
+            </div>
+            <div id="company">
+                <label>Company</label>
+                <ul>
+                    <li>Information</li>
+                    <li>Clients</li> 
+                    <li>Resources</li>
+                    <li>Blog</li>
+                </ul>
+            </div>                
+            <div>
+                <label>Support</label>
+                <ul>
+                    <li>Help</li>  
+                    <li>Tutorials</li>
+                    <li>API</li>
+                    <li>Contact</li>
+                </ul>
+            </div> 
+        </section>
+        <footer>
+            <div id="social-media" >
+                <a href="https://linkdin.com">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
                 <a href="https://twitter.com/login">
-                    <img src="../assets//twitter.png" height="30" width="30">    
+                    <i class="fa fa-twitter" aria-hidden="true"></i>   
                 </a>
                 <a href="https://facebook.com">
-                    <img src="../assets/facebook.png" height="30" width="30">
-                </a>
-                <a href="https://linkdin.com">
-                    <img src="../assets/linkdin.png" height="30" width="30">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
                 <a href="https://instagram.com">
-                    <img src="../assets/instagram.jfif" height="30" width="30">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
                 <a href="https://github.com">
-                    <img src="../assets/github.png" height="30" width="30">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
                 </a>
-            </section>
-            <section>
+            </div>
+            <div id="copy">
                 <p>Montevideo, Uruguay</p>
                 <p>Copyright 2022 Radium Rocket, all rights reserved.</p>
-            </section>            
-        </footer> -->
+            </div>            
+        </footer>
     </body> 
 </html>
