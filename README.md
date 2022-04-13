@@ -13,4 +13,6 @@ Learn CSS and add styles to the previous work done on Week02 so that the product
 ### Week 04
 Create a mobile-first landing page for Trackgenix using flex-box and media queries to create a responsive design.
 
+I am not sure why when i run the inspector in the browser the mobile design does not work properly. To see mobile design, try without using the inspector, at least that worked for me :<>:
+
 _By Juan Manuel Ramos_
