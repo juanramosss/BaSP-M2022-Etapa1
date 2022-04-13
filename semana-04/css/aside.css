@@ -10,7 +10,7 @@ aside{
         display: flex;
         flex-direction: column;
         background-image: linear-gradient(#50a780, white);
-        /* justify-items: space-around; */
+        /* justify-items: flex-start; */
         align-content: center;
         padding: 2% 4% 2% 2%;
         width: 20%;
@@ -20,17 +20,26 @@ aside{
         display: flex;
         flex-direction: column;
         flex: auto;
+       
     }
     .aside-block label{
-        font-size: larger;
+        font-size: 30px;
         font-weight: bold;
-        padding: 2% 0;
+        padding: 8% 0;
         border-bottom: 1.5px solid #ed2626;
 
     }
-    aside a{
-        padding: 2% 0;
+    #aside-nav a{
+        padding: 8% 0;
         border-bottom: 1px solid #cecaca;
+        font-size: 25px;
+        text-shadow: 0px 3px #00000025;
+    }
+    aside a{
+        padding: 8% 0;
+        border-bottom: 1px solid #cecaca;
+        font-size: 20px;
+        text-shadow: 0px 3px #00000025;
     }
     #contact2{
         border-bottom: none;
@@ -38,6 +47,8 @@ aside{
     aside p{
         padding: 5% 0 0 0;
         text-align: left;
+        font-size: 22px;
+        
     }
     aside input{
         background-color: #49A37B;
