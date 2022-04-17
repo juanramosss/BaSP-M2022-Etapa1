@@ -3,9 +3,9 @@ Crear una variable de tipo string con al menos
 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).
 */
 
-var minuscula = 'ornitorrinco';
-var mayuscula = minuscula.toUpperCase();
-console.log(mayuscula);
+var lower = 'ornitorrinco';
+var upper = lower.toUpperCase();
+console.log(upper);
 
 /* 2-b. 
 Crear una variable de tipo string con al menos 10 caracteres y 
@@ -23,9 +23,9 @@ y generar un nuevo string con los últimos 3 caracteres
 guardando el resultado en una nueva variable (utilizar substring).
 */
 
-var palabra = 'estereotipo';
-var ultimasLetras = palabra.substring(8);
-console.log("The last three letters of the word " + palabra + " are " + ultimasLetras);
+var word = 'estereotipo';
+var lastLetters = word.substring(8);
+console.log("The last three letters of the word " + word + " are " + lastLetters);
 
 /* 2-d. 
 Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la
@@ -33,22 +33,22 @@ primera letra en mayúscula y las demás en minúscula. Guardar el resultado en 
 variable (utilizar substring, toUpperCase, toLowerCase y el operador +).
 */
 
-var raro = 'iRREALMENTE';
-var primerLetra = raro.substring(0,1);
-var agrandar = primerLetra.toUpperCase();
-var restoDeRaro = raro.substring(1);
-var achicar = restoDeRaro.toLowerCase();
-var resultado = agrandar + achicar;
-console.log("Por lo general escribimos asi: " + resultado + " y no asi: " + raro);
+var weird = 'iRREALMENTE';
+var firstLetter = weird.substring(0,1);
+var reSize = firstLetter.toUpperCase();
+var notWeird = weird.substring(1);
+var downSize = notWeird.toLowerCase();
+var newWord = reSize + downSize;
+console.log("In general, we write like this '" + newWord + "' and not like this '" + weird + "'");
 
 /* 2-e. 
 Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. 
 Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf).
 */
 
-var estas = 'Hola, estas?';
-var espacio = estas.indexOf(" ");
-console.log("El espacio en blanco esta en el lugar numero: " + (espacio+1));
+var youThere = 'Hello, you there?';
+var spaceBar = youThere.indexOf(" ");
+console.log("The white space is in the position number: " + (spaceBar+1));
 
 /* 2-f.
 Crear una variable de tipo string con al menos 2 palabras largas 
@@ -57,9 +57,10 @@ anteriores para generar un nuevo string que tenga la primera letra de ambas pala
 en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).
 */
 
-var jugador = 'aleXANDer arNOld';
-var espacio = jugador.indexOf(" ");
-var bienEscrito = jugador.substring(0,1).toUpperCase() + jugador.substring(1,espacio+1).toLowerCase() + jugador.substring(espacio+1,espacio+2).toUpperCase() + jugador.substring(espacio+2).toLowerCase();
+var playerName = 'aleXANDer arNOld';
+var space = playerName.indexOf(" ");
+var wellWritten = playerName.substring(0,1).toUpperCase() + playerName.substring(1,space+1).toLowerCase();
+wellWritten = wellWritten + playerName.substring(space+1,space+2).toUpperCase() + playerName.substring(space+2).toLowerCase(); 
 
-console.log(bienEscrito);
+console.log(wellWritten);
 
