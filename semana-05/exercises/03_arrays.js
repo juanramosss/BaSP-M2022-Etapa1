@@ -2,8 +2,8 @@
  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
  mostrar por consola los meses 5 y 11 (utilizar console.log).
  */
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-"Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var months = ["January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"];
 console.log ("3-a: "+months[4]);
 console.log (months[10]);
 
@@ -13,8 +13,8 @@ console.log (months[10]);
 
 /* 3-c. Agregar un elemento al principio y al final del array (utilizar unshift y push).*/
 
-var monthsNewArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-"Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var monthsNewArray = ["January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"];
 monthsNewArray.unshift("Meses");
 monthsNewArray.push("2022");
 console.log("3-c: "+monthsNewArray);

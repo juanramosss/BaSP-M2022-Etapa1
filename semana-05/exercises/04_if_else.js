@@ -21,17 +21,17 @@ if (randomNumber >= 0.5){
 
 var age = Math.random() * 100;
 if (age<2){
-    alert("Bebe");
+    alert("4-b: Baby");
 }else if(age>1 && age<13){
-    alert("Nino");
+    alert("4-b: Kid");
 }else if(age>12 && age<20){
-    alert("Adolescente");
+    alert("4-b: Teen");
 }else if(age>19 && age<31){
-    alert("Joven");
+    alert("4-b: Young adult");
 }else if(age>30 && age<61){
-    alert("Adulto");
+    alert("4-b: Adult");
 }else if(age>60 && age<76){
-    alert("Adulto mayor");
+    alert("4-b: Grown Adult");
 }else{
-    alert("4-b: Anciano");
+    alert("4-b: Elder");
 }

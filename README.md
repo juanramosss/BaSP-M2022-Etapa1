@@ -15,4 +15,9 @@ Create a mobile-first landing page for Trackgenix using flex-box and media queri
 
 I am not sure why when i run the inspector in the browser the mobile design does not work properly. To see mobile design, try without using the inspector, at least that worked for me :<>:
 
+### Week 05
+
+Learning JavaScript by doing several exercises, getting in touch with many JS functions and also creating new functions. 
+<<Be careful, loads of alerts will pop up when running this page.>>
+
 _By Juan Manuel Ramos_

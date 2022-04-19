@@ -48,7 +48,7 @@ Encontrar la posición del primer espacio en blanco y guardarla en una variable 
 
 var youThere = 'Hello, you there?';
 var spaceBar = youThere.indexOf(" ");
-console.log("2-e: The white space is in the position number: " + (spaceBar+1));
+console.log("2-e: The white space in the string '" + youThere + "' is in the position number: " + (spaceBar+1));
 
 /* 2-f.
 Crear una variable de tipo string con al menos 2 palabras largas 
