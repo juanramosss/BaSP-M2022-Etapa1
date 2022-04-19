@@ -3,10 +3,10 @@ mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y
 */
 randomNumber = Math.random();
 if (randomNumber >= 0.5){
-    alert("Greater than 0,5");
+    alert("4-a: Greater than 0,5");
 
 }else{
-    alert("Lower than 0,5");
+    alert("4-a: Lower than 0,5");
 }
 
 /* 4-b. Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta:
@@ -33,5 +33,5 @@ if (age<2){
 }else if(age>60 && age<76){
     alert("Adulto mayor");
 }else{
-    alert("Anciano");
+    alert("4-b: Anciano");
 }

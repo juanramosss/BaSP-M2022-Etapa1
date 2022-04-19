@@ -5,7 +5,7 @@ Crear una variable de tipo string con al menos
 
 var lower = 'ornitorrinco';
 var upper = lower.toUpperCase();
-console.log(upper);
+console.log("2-a: "+upper);
 
 /* 2-b. 
 Crear una variable de tipo string con al menos 10 caracteres y 
@@ -15,7 +15,7 @@ guardando el resultado en una nueva variable (utilizar substring)
 
 var movie = 'interstellar';
 var shortName = movie.substring(0,5);
-console.log("The movie " + movie + " will appear as " + shortName);
+console.log("2-b: The movie " + movie + " will appear as " + shortName);
 
 /* 2-c. 
 Crear una variable de tipo string con al menos 10 caracteres
@@ -25,7 +25,7 @@ guardando el resultado en una nueva variable (utilizar substring).
 
 var word = 'estereotipo';
 var lastLetters = word.substring(8);
-console.log("The last three letters of the word " + word + " are " + lastLetters);
+console.log("2-c: The last three letters of the word " + word + " are " + lastLetters);
 
 /* 2-d. 
 Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la
@@ -39,7 +39,7 @@ var reSize = firstLetter.toUpperCase();
 var notWeird = weird.substring(1);
 var downSize = notWeird.toLowerCase();
 var newWord = reSize + downSize;
-console.log("In general, we write like this '" + newWord + "' and not like this '" + weird + "'");
+console.log("2-d: In general, we write like this '" + newWord + "' and not like this '" + weird + "'");
 
 /* 2-e. 
 Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. 
@@ -48,7 +48,7 @@ Encontrar la posición del primer espacio en blanco y guardarla en una variable 
 
 var youThere = 'Hello, you there?';
 var spaceBar = youThere.indexOf(" ");
-console.log("The white space is in the position number: " + (spaceBar+1));
+console.log("2-e: The white space is in the position number: " + (spaceBar+1));
 
 /* 2-f.
 Crear una variable de tipo string con al menos 2 palabras largas 
@@ -62,5 +62,5 @@ var space = playerName.indexOf(" ");
 var wellWritten = playerName.substring(0,1).toUpperCase() + playerName.substring(1,space+1).toLowerCase();
 wellWritten = wellWritten + playerName.substring(space+1,space+2).toUpperCase() + playerName.substring(space+2).toLowerCase(); 
 
-console.log(wellWritten);
+console.log("2-f: "+wellWritten);
 

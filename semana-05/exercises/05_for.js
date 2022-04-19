@@ -3,14 +3,14 @@ JavaScript para mostrar una alerta utilizando cada una de las palabras.
 */
 var fiveWords = ["harina", "azucar", "vainilla", "huevos", "manteca"];
 for (i=0; i<5; i++){
-    alert(fiveWords[i]);
+    alert("5-a: "+ fiveWords[i]);
 }
 
 /* 5-b. Al array anterior convertir la primera letra de cada palabra en 
 mayúscula y mostrar una alerta por cada palabra modificada.
 */
 for (i=0; i<5; i++){
-    alert(fiveWords[i].substring(0,1).toUpperCase() + fiveWords[i].substring(1));
+    alert("5-b: "+ fiveWords[i].substring(0,1).toUpperCase() + fiveWords[i].substring(1));
 }
 
 /* 5-c. Crear una variable llamada “sentence” que tenga un string vacío,
@@ -22,7 +22,7 @@ for(i=0; i<4; i++){
     sentence = sentence + fiveWords[i] + " y ";
 }
 sentence= sentence + fiveWords[4] + ".";
-alert(sentence);
+alert("5-c: "+ sentence);
 
 /*5-d. Crear una array vacío y con un bucle for de 10 repeticiones.
  Llenar el array con el número de la repetición, es decir que al final 
@@ -34,4 +34,4 @@ var empty = new Array(10);
 for (i=0; i<10; i++){
     empty[i]=i;
 }
-alert(empty);
+alert("5-d: "+empty);
