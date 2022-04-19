@@ -2,19 +2,22 @@
     box-sizing: border-box;
 }
 h1{
-    font-size: 34px;
+    font-size: 36px;
     font-weight: bold;
 }
 h2{
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bold;
 }
 h4{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 li{
-    font-size: 12px;
+    font-size: 16px;
+}
+p{
+    font-size: 16px;
 }
 .get-info-container{
     display: none;
@@ -23,23 +26,17 @@ main{
     width: 100%;
     /* background: #eee;   */
 }
-
 .body-container{
     display: flex;
     flex-direction: column;
     /* background: #ccc; */
     /* border: solid red; */
     padding: 3%;
-    
-    
-    
-
 }
 .main-body{
     padding: 3%;
     overflow: hidden;
     /* border: solid black; */
-
 }
 
 #logo-title-container{
@@ -57,19 +54,16 @@ main{
     height: 80px;
 }
 
-
 #heart{    
     display: flex;
     flex-direction: column;
     text-align: center;   
     align-items: center;
 }
-
 #big-image{
     width: auto;
     height: 243px;
 }
-
 .figures{
     display: flex;
     flex-wrap: wrap;
@@ -83,10 +77,7 @@ main{
     flex-direction: column;
     box-shadow: 0px 5px 5px #505168;
     margin: 5%;
-    justify-content: flex-end;
-    
-    
-    
+    justify-content: flex-end;   
 }
 .fig img{
     width: 100%;
@@ -96,44 +87,33 @@ main{
 .fig figcaption{
     background-color: #efe7e7;
     box-shadow: 0px 5px 5px #505168;
+    text-align: center;
 }
-
 .catchy div{
     display: flex;
     flex-direction: column;
     text-align: center;
-    
-    
-    
-
 }
 .catchy div ul{
     padding: 5% 0;
 }
-
-
 #about-us{
     border-radius: 20px;
-    background-color: #E9E9E9;
-    
-    
+    background-color: #E9E9E9;   
 }
-
-
-.body-container :nth-child(4) :nth-child(1){
+#about-us :nth-child(1){
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.body-container :nth-child(4) :nth-child(2){
+#about-us :nth-child(2){
     display: flex;
     flex-direction: row;
-    text-align: left;
-    
+    text-align: left;    
     padding-bottom: 5%;
 }
 
-.body-container :nth-child(4) :nth-child(3){
+#about-us :nth-child(3){
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -146,23 +126,18 @@ main{
 .about-us p{
     flex: 2.5;
 }
-
 .side-to-side{
     display: flex;
     background: #50A780;
     justify-content: space-evenly;
     padding: 5% 0;
     text-align: center;
-
 }
 
 .side-to-side label{
-    font-size: 12;
-    
-    
+    font-size: 12;    
 }
-.side-to-side li{
-    
+.side-to-side li{   
     color: white;
     font-size: 11px;
 }
@@ -181,9 +156,6 @@ main{
     border-right: solid black;
     border-left: solid black;
 }
-
-
-
 /* 
 MEDIA QUERIES
 MEDIA QUERIES */
@@ -218,15 +190,12 @@ MEDIA QUERIES */
     }
     .figures, .catchy{
         padding: 5% 0;
-
     }
     .catchy div h2{
         text-align: left;
     }
-    .catchy div li{
-        
-        font-size: 15px;
-        
+    .catchy div li{    
+        font-size: 15px;    
     }
     .catchy div ul{
         text-align: left;
@@ -234,12 +203,7 @@ MEDIA QUERIES */
     .figures{
         justify-content: flex-start;
     }
-
-
 }  
-
-
-
 @media screen and (min-width:1024px){
     main{
         width: 80%;
@@ -248,10 +212,8 @@ MEDIA QUERIES */
         display: flex;
         flex-direction: column;
     }
-    .figures{
-        display: flex;
-        flex-wrap: nowrap;
-       
+    .figures{   
+        flex-wrap: nowrap; 
         justify-content: center;
     }
     .fig{
@@ -261,12 +223,10 @@ MEDIA QUERIES */
     }
     .fig img{
         width: 100%;
-        height: 80%;
-        
+        height: 80%;    
     }
     .catchy{
-        display: flex;
-        
+        display: flex;   
     }
     .catchy div{
         margin: 0 2%
@@ -274,38 +234,29 @@ MEDIA QUERIES */
     .catchy h2{
         font-size: 27px;
     }
-
     .get-info-container{
-        display: contents;
-        
-        
+        display: contents;  
     }
     .get-info-container h2{
         font-size: 25px;
         font-weight: bold;
         border-bottom: solid black;
         padding: 10% 2% 2% 2%;
-        margin-bottom: 2%;
-        
+        margin-bottom: 2%;   
     }
     .get-info-container2{
         display: flex;
-        justify-content:space-between;
-        
+        justify-content:space-between;      
     }
     .get-info{
         flex: auto;
-        
-
     }
     .get-info-container2 :nth-child(1){
         text-align:start;
-
     }
     .get-info-container2 :nth-child(2){
         margin-top: 5%;
     }
-   
     .get-info-container2 label, .get-info-container2 input{
         display: block;
         margin: 5%;
@@ -328,8 +279,7 @@ MEDIA QUERIES */
         flex: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;     
     }
     #message{
         padding: 1.5% 20% 35% 1.5%;
@@ -338,13 +288,7 @@ MEDIA QUERIES */
         background-color: #AACE9B;
         border: none;
         border-radius: 5px;
-        padding: 1.5% 30%;
-        
-        
+        padding: 1.5% 30%;   
     }
-
 }
 
-/*
-MEDIA QUERIES
-MEDIA QUERIES */

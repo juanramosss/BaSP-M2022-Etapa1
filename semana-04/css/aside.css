@@ -2,8 +2,7 @@ aside{
     display: none;
 }
 .big-container{
-    display: flex;
-    
+    display: flex;   
 }
 @media screen and (min-width:1024px){
     aside{
@@ -14,20 +13,17 @@ aside{
         align-content: center;
         padding: 2% 4% 2% 2%;
         width: 20%;
-
     }
     .aside-block{
         display: flex;
         flex-direction: column;
-        flex: auto;
-       
+        flex: auto;      
     }
     .aside-block label{
         font-size: 30px;
         font-weight: bold;
         padding: 8% 0;
         border-bottom: 1.5px solid #ed2626;
-
     }
     #aside-nav a{
         padding: 8% 0;
@@ -48,11 +44,9 @@ aside{
         padding: 5% 0 0 0;
         text-align: left;
         font-size: 22px;
-        
-    }
+   }
     aside input{
         background-color: #49A37B;
-        font-size: 1vw;
-        
+        font-size: 1vw;       
     }
 }
