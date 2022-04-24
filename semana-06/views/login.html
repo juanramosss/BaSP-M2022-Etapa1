@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Trackgenix Login Page</title>
+        <script src="../javascript/login.js"></script>
     </head>
     <body>
         <header>
@@ -31,8 +32,7 @@
                     <img id="lens" src="../../assets/search.png" width="15" height="15">               
                 </div>
                 <div class="buttons">
-                    <input type="button"  value="Login" class="login">
-                    <input type="button"  value="SignUp" class="signup">
+                    <input type="button"  value="Home" class="home">                   
                 </div>        
             </div>            
         </header>
@@ -48,12 +48,14 @@
                         </div>   
                     </div>   
                     <div id="login" class="main-body">
-                        <h2>Sign In</h2>
+                        <h2>Login</h2>
                         <div id="login-fields">
-                            <label>User</label>
-                            <input type="text" value="User or E-mail">
+                            <label>E-mail</label>
+                            <input id="user" class="erase" type="email" value="Write account e-mail">
+                            <p class="error">Invalid e-mail</p>
                             <label>Password</label>
-                            <input type="text" value="Password">
+                            <input id="pwd" class="erase" type="text" value="Password">
+                            <p class="error">Wrong password</p>
                         </div>
                         <div id="below-fields">
                             <checkbox>Remember Me</checkbox>

@@ -35,10 +35,11 @@
     justify-content: space-around;
     flex: 40;   
 }
-.login, .signup{
+.login, .sign-up{
     flex-basis: 30%;
     border-radius: 20px;   
 }
+
 
 @media only screen and (min-width:768px){
     #nav-bar div:nth-child(2){

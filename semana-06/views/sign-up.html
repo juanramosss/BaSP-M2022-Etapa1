@@ -5,15 +5,17 @@
         <meta name="keywords" content="HTML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Trackgenix Landing Page">
-        <meta name="author" content="Juan Ramos">
+        <meta name="author" content="Juan Ramos">        
         <link rel="stylesheet" href="../styles/reset.css">
-        <link rel="stylesheet" href="../styles/header.css">     
+        <link rel="stylesheet" href="../styles/header.css">   
+		<link rel="stylesheet" href="../styles/sign-up.css">  
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Trackgenix Sign Up Page</title>
+        <script src="../javascript/sign-up.js"></script>
     </head>
     <body>
         <header>
@@ -27,11 +29,10 @@
                 </div>
                 <div class="search">
                     <input type="text" placeholder="Search" class="search-box">
-                    <img id="lens" src="../assets/search.png" width="15" height="15">               
+                    <img id="lens" src="../../assets/search.png" width="15" height="15">               
                 </div>
                 <div class="buttons">
-                    <input type="button"  value="Login" class="login">
-                    <input type="button"  value="SignUp" class="signup">
+                    <input type="button"  value="Home" class="home">                    
                 </div>        
             </div>            
         </header>
@@ -46,7 +47,72 @@
                             <h4>DATA MANAGEMENT</h4>
                         </div>   
                     </div>
-                    
+					<section class="sign-up-fields">
+                         <div class="column-container">
+                            <div>
+                                <label>Name</label>
+                                <input type="text" value="Write your name please">
+                                <p class="error">Must be at least 4 letters and only letters accepted.</p>
+                            </div>
+                            <div>
+                                <label>Last Name</label>
+                                <input type="text" value="Write your last name please">
+                                <p class="error">Must be at least 4 letters and only letters are accepted.</p>
+                            </div>
+                            <div>
+                                <label>ID</label>
+                                <input type="text" value="Write your ID number please">
+                                <p class="error">Id must be at least 7 numbers and only numbers are accepted.</p>
+                            </div>
+                            <div>
+                                <label>Birth Date</label>
+                                <input type="date">
+                                <p class="error">Must indicate birth date</p>
+                            </div>
+                            <div>
+                                <label>Phone Number</label>
+                                <input type="text" value="Write your phone number please">
+                                <p class="error">Must be at least 10 numbers and only numbers are accepted.</p>
+                            </div>
+                            <div>
+                                <label>Adress</label>
+                                <input type="text" value="Enter your adress please">
+                                <p class="error"> Adress must be at least 5 alphanumeric characters and a space.</p>
+                            </div>
+                        </div>
+                        <div class="column-container" >
+                            <div>
+                                <label>Locality</label>
+                                <input type="text" value="Enter city of residence please">
+                                <p class="error">Must have at least 3 alphanumeric characters.</p>
+                            </div>
+                            <div>
+                                <label>Postal Code</label>
+                                <input type="text" value="Enter your postal code please">
+                                <p class="error">Must have 4 or 5 characters and only numbers are accepted.</p>
+                            </div>
+                            <div>
+                                <label>E-mail</label>
+                                <input type="email" value="Enter your e-mail adress please">
+                                <p class="error">Invalid adress</p>
+                            </div>
+                            <div>
+                                <label>Password</label>
+                                <input type="text" value="Must be at least 8 characters, letters & numbers required">
+                                <p class="error">Invalid password.</p>
+                            </div>
+                            <div>
+                                <label>Repeat Password</label>
+                                <input type="text" value="Repeat Password please">
+                                <p class="error">Invalid password</p>
+                            </div>
+                            <div>
+                                <input type="button" value="Sign Up" id="sign-up-button">
+                            </div>
+                        </div>
+					</section>
+					
+
             </section>                
         </main>   
         <footer>
