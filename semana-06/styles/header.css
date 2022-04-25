@@ -1,7 +1,8 @@
 *{
-    color: black;
+    /* color: black;
     font-size: medium;
-    font-family: "roboto", sans-serif;
+    font-family: "roboto", sans-serif; */
+    font:'Roboto', sans-serif;
     text-decoration: none;
     box-sizing: border-box;
 }
