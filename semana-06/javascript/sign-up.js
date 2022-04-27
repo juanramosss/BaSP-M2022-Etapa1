@@ -209,14 +209,7 @@ function submitButton (){
         }
         alert("Please correct the following field(s): "+ incorrect);
     }
-
-
-
 }
-
-
-
-
 //FUNCTION FOR NAME AND SRNAME
 function moreThanThreeLettersValidation (word){
     var works = false;
@@ -287,8 +280,6 @@ function dateValidation (date){
     }  
     return works;
 } 
-
-
 //FUNCTION FOR PHONE NUMBER
 function phoneValidation(phoneNumber){
     var works = false;
@@ -376,5 +367,5 @@ function passwordValidation (pass){
     return (letters && numbers && (pass.length>7));
 }
 
-//function repeatPassword (pass1, pass2){
+
     

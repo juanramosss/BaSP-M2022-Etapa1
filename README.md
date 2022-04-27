@@ -28,7 +28,7 @@ https://juanramosss.github.io/BaSP-M2022-Etapa1/semana-05/
 
 Create Log In and Sign Up screens, make the screen flow work and add validations by using JS and DOM. 
 
-https://juanramosss.github.io/BaSP-M2022-Etapa1/semana-06/
+https://juanramosss.github.io/BaSP-M2022-Etapa1/semana-06/views
 
 
 _By Juan Manuel Ramos_
