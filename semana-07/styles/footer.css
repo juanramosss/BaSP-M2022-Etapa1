@@ -1,0 +1,29 @@
+footer{
+    text-align: center;
+    padding-top: 5%;
+}
+#copy p{
+    padding-bottom: 3%;
+    font-size: 9px;
+}
+#social-media i{
+    width: 20px;
+    height: 0px;
+}
+
+@media only screen and (min-width:768px){
+    #copy p{
+        font-size: 22px;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    #copy :nth-child(1){
+        color: #49A37B;
+        padding-top: 3%;
+    }
+    footer{
+        padding:  1%;;
+    }   
+}

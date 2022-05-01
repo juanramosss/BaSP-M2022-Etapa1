@@ -30,6 +30,9 @@ Create Log In and Sign Up screens, make the screen flow work and add validations
 
 https://juanramosss.github.io/BaSP-M2022-Etapa1/semana-06/views
 
+### Week 07
+
+By the use of fetch, local and session storage among other new functions and methods, change Week06 to a version with more insight.
 
 _By Juan Manuel Ramos_
 

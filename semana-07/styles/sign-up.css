@@ -1,0 +1,84 @@
+.home{
+    flex-basis: 30%;
+    border-radius: 20px;   
+}
+#nav-bar div:nth-child(4){
+    display: flex;
+    justify-content: space-around;
+    flex: 40;   
+}
+#logo-title-container{
+    display: flex;    
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: auto;
+    height: 80px;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10%;
+}
+.body-container{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 20%;    
+}
+
+.column-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+#column-1, #column-2{
+    
+    height: 15%;
+    width: 100%;
+    padding: 2%;
+}
+.sign-up-fields input{
+    width: 100%;
+    padding: 2%;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-top: 1%;
+}
+#sign-up-button{
+    background-color: #AACE9B;
+    border-radius: 10px;
+    border: none;
+    margin-top: 7%;
+    margin-left: 18%;
+    width: 60%;
+}
+.sign-up-fields label{
+    font-size: 14px;
+    
+}
+.error{
+    color: #F13312;
+    visibility: hidden;
+    font-size: 12px;
+    font-weight: bold;
+    padding:2% 0 2% 0;
+}
+.red{
+    border-color:#F13312;
+    background-color:rgba(255, 0, 0, 0.2);
+}
+
+@media only screen and (min-width:768px){
+    .sign-up-fields{
+        display: flex;
+        justify-content: center;
+    }
+}
