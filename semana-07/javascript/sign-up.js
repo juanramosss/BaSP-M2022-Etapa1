@@ -1,4 +1,6 @@
 window.onload = function(){
+    window.localStorage;
+
     var homeButton = document.getElementsByClassName("home");
     homeButton[0].onclick=function(){
         window.location= 'index.html';
@@ -31,6 +33,8 @@ window.onload = function(){
         var email = (document.getElementById("email").value);
         var password = (document.getElementById("password").value);
         var repeatPassword = (document.getElementById("repeat-password").value);
+        var allValues = [name, lastName, dni, birthDate, phone, adress, locality, postalCode, email, password];
+        var allKeys = ['Name: ', 'Last Name: ', 'ID: ', 'Birth Date: ', 'Phone: ', 'Adress: ', 'Locality: ', 'Zip: ', 'Email: ', 'Password: ']
         var all = ["Name: "+name + "\nLast Name: "+lastName+ "\nId: "+dni+ "\nBirth Date: "+birthDate+
                     "\nPhone: "+phone+ "\nAdress: "+adress+"\nLocality: "+locality+ "\nPostal Code: "+postalCode+
                     "\nE-mail: "+email+ "\nPassword: "+password+ "\nRepeat Password: "+repeatPassword];
@@ -45,20 +49,13 @@ window.onload = function(){
                     alert(data.msg +'\n'+ all )
                     return(data)
                 })
+            for(i=0; i < all.length ; i++){
+                localStorage.setItem(allKeys[i], allValues[i]);
+                console.log(Storage);
+            }
+                
         }else{
-            alert("sth went wrong");
-            
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name='+ name +'&lastName'+lastName+'&dni'+dni+'&dob'+birthDate
-            +'&phone'+phone+'&address'+adress+'&city'+locality+'&zip'+postalCode+'&email'+email+'&password'+password)
-                .then(function(response){
-                    return response.json()
-                })
-                .then(function(data){
-                    console.log(data)
-                    alert(data.msg)
-                    return(data)
-                })
-            
+            alert("Please try again.");            
         }
     
     }

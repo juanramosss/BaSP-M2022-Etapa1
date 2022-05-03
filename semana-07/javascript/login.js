@@ -35,18 +35,21 @@ function base(){
     var pwdBox = document.getElementById("pwd");
     var pwd = pwdBox.value;
     var works = login();
-    if (login){
+    if (works){
         fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email='+userName+'&password='+pwd)
         .then(function(response){
             return response.json()
         })
         .then(function(data){
             console.log(data)
-            alert(data.msg)
+            alert(data.msg + "\n"+ userName + "\n" +pwd)
         });
+        // .catch(function(error){
+        //     console.log("Something wrong." + error.msg)
+        // 
 
     }else{
-        alert("something went wrong.")
+        alert("Please, follow the input requirements.")
     }
 
 }
@@ -98,7 +101,7 @@ function pwdValidation(){
             numbers++;
         }
     }        
-    if(letters>0 && numbers>0){
+    if(letters>0 && numbers>0 && pwd.length>=7){
         return pwd;
     }else{
         document.getElementsByClassName("error")[1].style.visibility = "visible";
