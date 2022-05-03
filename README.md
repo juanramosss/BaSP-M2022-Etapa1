@@ -32,7 +32,11 @@ https://juanramosss.github.io/BaSP-M2022-Etapa1/semana-06/views
 
 ### Week 07
 
-By the use of fetch, local and session storage among other new functions and methods, change Week06 to a version with more insight.
+By the use of our latest adquired technology; fetch & local storage, week07 became quite an adventure. Not a lot of extra code lines, but the necessary ones shold be here.
+
+I am going to let you log in succesfully when you use the following account. 
+email: rose@radiumrocket.com
+pass: BaSP2022  change Week06 to a version with more insight.
 
 _By Juan Manuel Ramos_
 

@@ -1,6 +1,11 @@
 window.onload = function(){
     window.localStorage;
-
+    var htmlIds = ['name', 'last-name', 'id', 'birth-date', 'phone', 'adress', 'locality', 'postal-code', 'email', 'password']
+    var allKeys = ['Name: ', 'Last Name: ', 'ID: ', 'Birth Date: ', 'Phone: ', 'Adress: ', 'Locality: ', 'Zip: ', 'Email: ', 'Password: ']
+    for(i=0; i < allKeys.length; i++){
+        var getStorageInfo = localStorage.getItem(allKeys[i]);
+        document.getElementById(htmlIds[i]).value = getStorageInfo;
+    }
     var homeButton = document.getElementsByClassName("home");
     homeButton[0].onclick=function(){
         window.location= 'index.html';
@@ -18,9 +23,7 @@ window.onload = function(){
     var passwordBox = (document.getElementById("password"));
     var repeatPasswordBox = (document.getElementById("repeat-password"));
 
-    //values
-    
-
+   
     function requestServer(){
         var name = (document.getElementById("name").value);
         var lastName = (document.getElementById("last-name").value);
@@ -35,7 +38,7 @@ window.onload = function(){
         var repeatPassword = (document.getElementById("repeat-password").value);
         var allValues = [name, lastName, dni, birthDate, phone, adress, locality, postalCode, email, password];
         var allKeys = ['Name: ', 'Last Name: ', 'ID: ', 'Birth Date: ', 'Phone: ', 'Adress: ', 'Locality: ', 'Zip: ', 'Email: ', 'Password: ']
-        var all = ["Name: "+name + "\nLast Name: "+lastName+ "\nId: "+dni+ "\nBirth Date: "+birthDate+
+        var all = ["Name: "+name+ "\nLast Name: "+lastName+ "\nId: "+dni+ "\nBirth Date: "+birthDate+
                     "\nPhone: "+phone+ "\nAdress: "+adress+"\nLocality: "+locality+ "\nPostal Code: "+postalCode+
                     "\nE-mail: "+email+ "\nPassword: "+password+ "\nRepeat Password: "+repeatPassword];
         if (submitButton()){
@@ -49,7 +52,7 @@ window.onload = function(){
                     alert(data.msg +'\n'+ all )
                     return(data)
                 })
-            for(i=0; i < all.length ; i++){
+            for(i=0; i < allValues.length ; i++){
                 localStorage.setItem(allKeys[i], allValues[i]);
                 console.log(Storage);
             }
@@ -187,29 +190,6 @@ window.onload = function(){
 
 }
 
-//FUNCTION FOR SUBMIT BUTTON
-// var name=document.getElementById("name").value
-// function sayHello(name) {
-//     alert("hello " + name)
-//   }
-
-//  fetch('http://example.com/movies.json')
-//   .then(response => response.json())
-//   .then(data => console.log(data));
-
-
-
-// function sayHello(name) {
-//     alert("hello " + name)
-//   }
-// var name=document.getElementById("name").value
-//      sayHello(name);
-//      fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup'+)
-//          .then(response => response.json()
-//          .then(data => console.log(data))
-
-
-
 function submitButton (){
 
     var name = (document.getElementById("name").value);
@@ -252,10 +232,6 @@ function submitButton (){
         // alert("Please correct the following field(s): \n"+ incorrect);
     }
 }
-
-
-
-
 
 //FUNCTION FOR NAME AND SRNAME
 function moreThanThreeLettersValidation (word){
@@ -302,11 +278,11 @@ function dateValidation (date){
         return false;
     }
     var bar = date.indexOf("/");
-    var day = date.substring(0, bar);
+    var month = date.substring(0, bar);
     bar++;
     var monthAndYear = date.substring(bar);
     bar = monthAndYear.indexOf("/");
-    var month = monthAndYear.substring(0, bar);
+    var day = monthAndYear.substring(0, bar);
     bar++;
     var year = monthAndYear.substring(bar);
     var works = true;
@@ -323,6 +299,12 @@ function dateValidation (date){
             }
         }
         if(year >= todayDate()){
+            works = false;
+        }
+        if(month>12){
+            works = false;
+        }
+        if(day>31){
             works = false;
         }
     }else{
